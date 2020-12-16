@@ -12,7 +12,7 @@ const openApp = function() {
     setTimeout(fallbackToPlayStore, 250);
   }
   
-  if (navigator.appVersion.includes('iPhone')) {
+  if (navigator.appVersion.includes('iPhone') || navigator.appVersion.includes('iPad')) {
     setTimeout(fallbackToAppleStore, 250);
   }
 };
