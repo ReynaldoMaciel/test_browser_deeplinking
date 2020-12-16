@@ -8,8 +8,6 @@ const fallbackToAppleStore = function() {
 
 const openApp = function() {
   
-  window.location.replace('syno://login');
-  
   if (navigator.appVersion.includes('Android')) {
     setTimeout(fallbackToPlayStore, 250);
   }
